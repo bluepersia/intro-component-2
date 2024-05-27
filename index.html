@@ -30,30 +30,32 @@
       <div class="cmp__form-container">
         <form class="cmp__form">
           <div id="cmp__input--first-name" class="cmp__input-container">
-            <input type="text" name="first-name" class="cmp__input" placeholder="First Name" />
+            <input type="text" name="First Name" class="cmp__input" placeholder="First Name" data-required="true" data-minlength="2" />
             <p class="cmp__input-error">First name cannot be empty</p>
             <img src="./images/icon-error.svg" alt="Input error icon" class="cmp__input-error-icon"/>
           </div>
           <div id="cmp__input--last-name"class="cmp__input-container">
-            <input type="text" name="last-name" class="cmp__input" placeholder="Last Name"/>
+            <input type="text" name="Last Name" class="cmp__input" placeholder="Last Name" data-required="true" data-minlength="2"/>
             <p class="cmp__input-error"></p>
             <img src="./images/icon-error.svg" alt="Input error icon" class="cmp__input-error-icon"/>
           </div>
           <div id="cmp__input--email" class="cmp__input-container">
-            <input type="text" name="email" class="cmp__input" placeholder="Email Address"/>
+            <input type="text" name="Email" class="cmp__input" placeholder="Email Address" data-required="true" data-isemail="true"/>
             <p class="cmp__input-error"></p>
             <img src="./images/icon-error.svg" alt="Input error icon" class="cmp__input-error-icon"/>
           </div>
           <div id="cmp__input--password" class="cmp__input-container">
-            <input type="password" name="Password" class="cmp__input" placeholder="Password"/>
+            <input type="password" name="Password" class="cmp__input" placeholder="Password" data-required="true" data-minlength="8"/>
             <p class="cmp__input-error"></p>
             <img src="./images/icon-error.svg" alt="Input error icon" class="cmp__input-error-icon"/>
           </div>
-          <button class="cmp__btn cmp__btn--claim">Claim your free trial</button>
+          <button type="submit" class="cmp__btn cmp__btn--claim">Claim your free trial</button>
         </form>
         <p class="cmp__sign-up-terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </div>
     </div>
   </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>

@@ -169,14 +169,14 @@ body {
     pointer-events: none;
 }
 
-.cmp__form-container.invalid .cmp__input-error, .cmp__form-container.invalid .cmp__input-error-icon
+.cmp__input-container.invalid .cmp__input-error, .cmp__input-container.invalid .cmp__input-error-icon
 {
     opacity: 100%;
     pointer-events: all;
 }
 
-.cmp__form-container.invalid {
-    margin-bottom: 2em;
+.cmp__input-container.invalid {
+    margin-bottom: .75em;
 }
 
 
@@ -227,5 +227,12 @@ body {
     border-radius: 5px;
     background-color: var(--cmp-c-2);
     box-shadow: inset hsla(0,0%,0%,9%) 0px -4px;
+    cursor: pointer;
+    transition: filter 300ms;
+}
+
+.cmp__btn--claim:hover 
+{
+    filter: brightness(120%);
 }
 
