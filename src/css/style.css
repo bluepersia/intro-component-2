@@ -115,16 +115,19 @@ body {
     padding: 5.5em 6.4% 4.25em;
 }
 .cmp > * {
-    max-width: 525px;
     margin-left: auto;
     margin-right: auto;
 }
 .cmp__hero 
 {
+    max-width: 525px;
     margin-bottom: 4em;
 }
 
-
+.cmp__sign-up {
+    width: 100%;
+    max-width: 540px;
+}
 .cmp__form-container 
 {
     background-color: var(--cmp-c-white);
@@ -191,7 +194,6 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 1em;
         padding: 7.56em 11.4%;
     }
     .cmp > * {
@@ -205,7 +207,7 @@ body {
     }
 
     .cmp__form-container {
-        max-width: none;
+        padding: 2.5em;
     }
 }
 
