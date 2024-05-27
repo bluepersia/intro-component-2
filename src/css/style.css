@@ -1,0 +1,27 @@
+:root 
+{
+    --cmp-c-1: #FF7979;
+    --cmp-c-2: #38CC8B;
+    --cmp-c-3: #5E54A4;
+    --cmp-c-4: #3D3B48;
+    --cmp-c-5:  hsla(248, 9%, 26%, 75%);
+
+    --cmp-f-1: "Poppins", sans-serif;
+}
+
+body {
+    margin:0;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
