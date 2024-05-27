@@ -5,6 +5,8 @@
     --cmp-c-3: #5E54A4;
     --cmp-c-4: #3D3B48;
     --cmp-c-5:  hsla(248, 9%, 26%, 75%);
+    --cmp-c-6: #BAB7D4;
+    --cmp-c-white:white;
 
     --cmp-f-1: "Poppins", sans-serif;
 }
@@ -25,3 +27,78 @@ body {
 * :last-child {
     margin-bottom: 0;
 }
+
+
+/* Typography */
+
+.cmp {
+    font-family: var(--cmp-f-1);
+    line-height: 1.6;
+}
+
+.cmp__hero {
+    color: var(--cmp-c-white);
+}
+
+.cmp__title 
+{
+    font-size: 1.75rem;
+    line-height: 1.28;
+}
+
+.cmp__input::placeholder, .cmp__input {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.cmp__input::placeholder {
+    color: var(--cmp-c-5);
+}
+
+.cmp__input {
+    color: var(--cmp-c-4);
+}
+
+.cmp__input-error 
+{
+    font-size: .68rem;
+    color: var(--cmp-c-1);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.cmp__sign-up-terms 
+{
+    color: var(--cmp-c-6);
+    font-size: .6875rem;
+    font-weight: 500;
+}
+
+.cmp__sign-up-terms span 
+{
+    color: var(--cmp-c-1);
+}
+
+
+@media (min-width:1000px)
+{
+    .cmp__title {
+        font-size: 3.125rem;
+    }
+}
+
+/* Components Typography */
+
+.cmp__btn 
+{
+    font-size: .9375rem;
+    color: var(--cmp-c-white);
+}
+
+
+.cmp__btn--claim 
+{
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.066em;
+}
+
