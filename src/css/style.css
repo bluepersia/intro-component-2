@@ -51,7 +51,8 @@ body {
     font-weight: 600;
 }
 .cmp__input::placeholder {
-    color: var(--cmp-c-5);
+    color: var(--cmp-c-4);
+    opacity: 75%;
 }
 
 .cmp__input {
@@ -79,7 +80,7 @@ body {
 }
 
 
-@media (min-width:1000px)
+@media (min-width:1200px)
 {
     .cmp__title {
         font-size: 3.125rem;
@@ -100,5 +101,131 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.066em;
+}
+
+
+
+/* Layout */
+
+.cmp 
+{
+    background-image: url(../../images/bg-intro-mobile.png);
+    background-color: var(--cmp-c-1);
+    text-align: center;
+    padding: 5.5em 6.4% 4.25em;
+}
+.cmp > * {
+    max-width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cmp__hero 
+{
+    margin-bottom: 4em;
+}
+
+
+.cmp__form-container 
+{
+    background-color: var(--cmp-c-white);
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+
+.cmp__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+
+.cmp__input-container {
+    position: relative;
+}
+
+.cmp__input{
+    width: 100%;
+    padding: 1.07em 2.28em;
+}
+
+.cmp__input-error {
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform: translateY(100%);
+    margin-bottom: 0;
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.cmp__input-error-icon {
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.cmp__form-container.invalid .cmp__input-error, .cmp__form-container.invalid .cmp__input-error-icon
+{
+    opacity: 100%;
+    pointer-events: all;
+}
+
+.cmp__form-container.invalid {
+    margin-bottom: 2em;
+}
+
+
+.cmp__btn--try, .cmp__form-container {
+    box-shadow: 0px 8px 0px hsla(0, 0%, 0%, 14%);
+}
+
+@media(min-width:1200px)
+{
+    .cmp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        padding: 7.56em 11.4%;
+    }
+    .cmp > * {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cmp__hero {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .cmp__form-container {
+        max-width: none;
+    }
+}
+
+
+/* Components Layout */
+
+.cmp__btn {
+    padding: 1.125em;
+    border:none;
+}
+
+.cmp__btn--try 
+{
+    background-color: var(--cmp-c-3);
+    border-radius: 10px;
+}
+
+.cmp__btn--claim {
+    border-radius: 5px;
+    background-color: var(--cmp-c-2);
+    box-shadow: inset hsla(0,0%,0%,9%) 0px -4px;
 }
 
